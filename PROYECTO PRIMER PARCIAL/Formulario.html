@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BECAS ULEAM</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+ <body>
+    <header>
+    </header>
+    <br>
+    <h1> REGISTRO DE ESTUDIANTE</h1>
+    
+    <form class="formulario">
+        <h2 >Registro</h2> <br>
+        <br>
+    <div class="User-name">  
+    <label> Nombre de usuario</label> <br>
+    <input class="username" type="text" name="username" id="username" required>
+    </div> 
+    <br>
+    
+    <div class="pass">
+    <label> Contraseña </label> <br>
+    <input class="password" type="password" name="password" id="password" required> 
+    </div>
+    <br>
+
+    <div class="Telefono">
+    <label> Telefono</label> <br>
+    <input class="cel" type="text" name="cel" id="cel" required>
+    </div>
+    <br>
+
+    <div class="correo">
+    <label> Correo Electronico </label><br>
+    <input class="email" type="email" name="email" id="email" required>
+    </div>
+
+    <br>
+    <div class="carre">
+    <label> Nombre de la carrera</label> <br>
+    <input class="carre" type="text" name="carre" id="carre" required>
+    </div>
+
+    <br>
+    <div class="nivel">
+    <label> Nivel de carrera</label> <br>
+    <input class="nivel" type="number" name="nivel" id="nivel" required>
+    </div>
+
+    <br>
+    <div class="tipo_vivienda">
+        <label for="tipo_vivienda">Tipo de vivienda:</label>
+		<select id="tipo_vivienda" name="tipo_vivienda">
+			<option value="propia">Propia</option>
+			<option value="alquilada">Alquilada</option>
+			<option value="prestada">Prestada</option>
+			<option value="otra">Otra</option>
+		</select><br><br>
+    </div>
+
+    <label for="num_personas">Número de personas en el hogar:</label>
+		<input type="number" id="num_personas" name="num_personas"><br><br>
+
+
+    <br>
+
+    <div class="ingresos">
+        <label for="ingresos">Ingresos mensual:</label>
+		<select id="ingresos" name="ingresos">
+			<option value="Sueldo basico">Sueldo Basico</option>
+			<option value="Menos del sueldo basico">Menos del sueldo basico</option>
+			<option value="otra">Otra</option>
+		</select><br><br>
+    </div>
+    
+    <br>
+
+    
+    <div class="link">
+        <br>
+    <p class="link-inicio"><a href="InicioSesión.html"> ¿Ya tienes Cuenta? </a></p>
+    </div>
+</form>
+<br>
+<div>
+<button type="submit" class="enviar" onclick="Registro()">Enviar</button>
+</div>   
+<br>
+<footer> Pagina creada por Adrián Santana</footer> 
+<p id="error-message"></p>
+<script src="js/formulario.js"></script>
+ </body>
+</html>

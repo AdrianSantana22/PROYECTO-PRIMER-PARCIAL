@@ -1,0 +1,112 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Colores */
+:root {
+--color-primario: #6C63FF;
+--color-secundario: #75869f;
+--color-texto: #000000;
+}
+
+/* Estilos generales */
+*{
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+}
+header{
+background: white url(https://moodledanu.uleam.edu.ec/pluginfile.php/1/theme_klass/footerlogo/1655214245/logo_ULEAM_2017_horizontal.png) no-repeat center;
+height:100px;
+width: 100%;
+background-size: contain;
+}
+body {
+background-color: var(--color-secundario);
+margin: 0;
+padding: 0;
+}
+
+h1 {
+color: var(--color-primario);
+text-align: center;
+margin-top: 50px;
+}
+
+/* Formulario */
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+}
+
+label {
+font-size: 1.2rem;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+input[type="text"] {
+border: none;
+border-radius: 10px;
+padding: 10px;
+font-size: 1.2rem;
+font-weight: 400;
+width: 300px;
+margin-bottom: 20px;
+}
+
+button[type="button"] {
+background-color: var(--color-primario);
+border: none;
+border-radius: 10px;
+padding: 10px 20px;
+font-size: 1.2rem;
+margin-top: 10px;
+font-weight: 600;
+color: var(--color-secundario);
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+background-color: #000000;
+}
+
+/* Tabla */
+table {
+border-collapse: collapse;
+width: 100%;
+margin-top: 50px;
+}
+
+th, td {
+text-align: left;
+padding: 12px;
+font-size: 1.2rem;
+font-weight: 400;
+}
+
+th {
+background-color: var(--color-primario);
+color: var(--color-secundario);
+}
+
+tbody tr:nth-child(even) {
+background-color: #6974ab;
+}
+
+/* Estados de la beca */
+.beca-aprobada {
+color: green;
+font-weight: 600;
+}
+
+.beca-rechazada {
+color: red;
+font-weight: 600;
+}
+
+.beca-pendiente {
+color: var(--color-primario);
+font-weight: 600;
+}

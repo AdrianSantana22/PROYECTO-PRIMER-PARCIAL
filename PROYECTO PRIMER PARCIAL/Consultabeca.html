@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Consulta de Beca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/Consultabeca.css">
+</head>
+<body>
+    <header>
+        
+    </header>
+    <h1>Consulta de Beca</h1>
+    <form>
+        <label for="id_beca">ID de Beca:</label>
+        <input type="text" id="id_beca" name="id_beca"  required>
+        <button type="button" onclick="consultarBeca()">Consultar</button> <br><i class="fa-solid fa-magnifying-glass"></i>
+        <br>
+        <button type="button" onclick="Regresar()">Regresar</button>
+    </form>
+
+    <table id="tabla_beca">
+        <thead>
+            <tr>
+                <th>ID de Beca</th>
+                <th>Estado</th>
+                <th>Fecha de Aprobación</th>
+            </tr>
+        </thead>
+        <tbody id="tbody_beca">
+            <tr>
+                <td>1</td>
+                <td>Pendiente</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Aprobada</td>
+                <td>03/05/2024</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rechazada</td>
+                <td>01/05/2024</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Pendiente</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Aprobada</td>
+                <td>04/05/2024</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rechazada</td>
+                <td>02/05/2024</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="tabla_resultado" style="display:none;">
+        <thead>
+            <tr>
+                <th>ID de Beca</th>
+                <th>Estado</th>
+                <th>Fecha de Aprobación</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script type="text/javascript" src="./js/Consulta.js"></script>
+</body>
+</html>

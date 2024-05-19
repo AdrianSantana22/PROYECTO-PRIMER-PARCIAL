@@ -1,0 +1,64 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    height: 100px;
+    background-color: #685b87;
+    min-height: 10%;
+
+}
+h2{
+    text-align: center;
+}
+header{
+    background: white url(https://moodledanu.uleam.edu.ec/pluginfile.php/1/theme_klass/footerlogo/1655214245/logo_ULEAM_2017_horizontal.png) no-repeat center;
+    height:100px;
+    width: 100%;
+    background-size: contain;
+}
+.formulario{
+
+    text-align: left;
+    min-height: 200px;
+    height: auto;
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: black;
+    background: rgba(255, 255, 255, 0.33);
+    box-shadow:  0 1rem 1rem rgba(0,0, 0, 0.3);
+}
+
+.formulario .pass .password{
+    width: 100%;
+    height: 35px;
+    
+}
+
+.formulario .correo .email{
+    width: 100%;
+    height: 35px;
+    
+}
+
+
+button{
+    display: block;
+    margin: auto;
+    width: 110px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    color: rgb(10, 121, 40);
+}
+footer{
+    color:rgb(21, 12, 142)
+}
